@@ -1,0 +1,195 @@
+$color-principal:rgb(228, 220, 209);
+$color-letra:rgb(95, 46, 3);
+$color-barra:rgb(95, 46, 3);
+$color-edicion:rgb(248, 233, 168);
+$color-target:rgb(236,235,233);
+$letra-texto: 'Roboto',sans-serif;
+$letra-destacada:'Abril Fatface',cursive;
+
+@import 'header';
+@import 'presentacion';
+@import 'categorias';
+
+* {
+    margin: 0;
+    font-family: $letra-texto;
+}
+
+body {
+    background-color: $color-principal;
+    padding-top: 90px;
+}
+
+    .titulo h1 {
+        font-family: $letra-destacada;
+        font-size: 60px;
+        color: $color-letra;
+        text-align: center;
+        padding-top: 10px;
+        animation-name: titulo;
+        animation-duration: 2s;
+    }
+
+// animacion
+@keyframes titulo {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.edicion {
+    font-family: $letra-texto;
+    font-size: 48px;
+    color: $color-edicion;
+    text-align: center;
+    position: relative;
+    bottom: 180px;
+    animation-name: edicion;
+    animation-duration: 3s;
+}
+
+@keyframes edicion {
+    0% {
+        opacity: 0%;
+    }
+
+    60% {
+        opacity: 0%;
+    }
+
+    70% {
+        transform: scale(2);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+}
+
+.cont-principal-img {
+    display: block;
+    margin: 0 auto;
+
+    height: calc(100vh - 500px);
+    padding-top: 20px;
+
+    animation-name: medalla;
+    animation-duration: 3s;
+}
+
+@keyframes medalla {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(30deg);
+    }
+
+    60% {
+        transform: rotate(-30deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+#footer-main{
+    animation-name: footer-main;
+    animation-duration: 3s;
+}
+
+@keyframes footer-main {
+    0% {
+        opacity: 0%;
+    }
+    90% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+@media(max-width:768px) {
+
+    body {
+        padding-top: 70px;
+    }
+
+.edicion p{
+    display:none;
+}
+
+.cont-principal-img {
+    height: 200px;
+    padding-top: 180px;
+}
+
+.slideshow-container{
+    padding: 0px;
+}
+
+.cont-principal-img {
+    animation-duration: 3s;
+}
+
+footer {
+    height: auto;
+    line-height: auto;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.titulo h1{
+    font-size: 28px;
+    animation-duration: 1.5s;
+}
+// animacion
+@keyframes titulo {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#footer-main{
+    animation-name: footer-main;
+    animation-duration: 2s;
+}
+
+}

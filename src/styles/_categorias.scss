@@ -1,0 +1,276 @@
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    display: block;
+    margin: 0 auto;
+    img {
+        display: block;
+        margin: 0 auto;
+        max-height: 100px;
+    }
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+.contaniner-enlaces-categorias {
+    display: grid;
+    max-width: 1000px;
+    background-color: azure;
+    margin: 0 auto;
+    padding: 80px 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 40px;
+
+    .name-nobel {
+        text-align: center;
+        font-size: 24px;
+        color: $color-letra;
+        font-family: $letra-destacada;
+    }
+
+    .winner {
+        text-align: center;
+        font-size: 22px;
+        color: black;
+        font-family: $letra-texto;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        height: 200px;
+    }
+}
+
+.centrado {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.contaniner-main-categoria {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: $color-letra;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    h1 {
+        font-family: $letra-destacada;
+        font-size: 42px;
+        color: $color-letra;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    p {
+        padding: 28px 0;
+        ;
+    }
+
+    img,
+    iframe {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+}
+
+
+.container-target {
+    display: grid;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.target {
+    width: 70%;
+    height: 70%;
+    background-color: $color-target;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px $color-letra;
+}
+
+.name-premio {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: $color-letra;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.informacion{
+    margin-top:40px;
+    padding: 40px 50px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    li{
+        padding: 15px;
+    }
+}
+
+@media(max-width:768px) {
+
+    #categorias{
+        padding-top: 180px;
+    }
+
+    #informacion{
+        padding-top: 180px;
+    }
+
+    #informacion2{
+        padding-top: 180px;
+        font-size: 24px;
+    }
+
+    iframe{
+        width: 80%;
+    }
+
+    .contaniner-enlaces-categorias {
+        display: grid;
+        max-width: 95%;
+        background-color: azure;
+        margin: 0 auto;
+        padding: 10px 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 20px;
+    
+        .name-nobel {
+            text-align: center;
+            font-size: 16px;
+            color: $color-letra;
+            font-family: $letra-destacada;
+        }
+    
+        .winner {
+            text-align: center;
+            font-size: 14px;
+            color: black;
+            font-family: $letra-texto;
+        }
+    
+        img {
+            display: block;
+            margin: 0 auto;
+            height: 80px;
+        }
+    }
+    
+    .centrado {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+    
+    .contaniner-main-categoria {
+        max-width: 90%;
+        margin: 0 auto;
+        color: $color-letra;
+        font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    
+        h1 {
+            font-family: $letra-destacada;
+            font-size: 42px;
+            color: $color-letra;
+            text-align: center;
+            padding-top: 10px;
+        }
+    
+        p {
+            padding: 28px 0;
+            ;
+        }
+    
+        img,
+        iframe {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+    }
+    
+    
+    .container-target {
+        display: grid;
+        max-width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        padding-top: 10px;
+        padding-bottom: 80px;
+    }
+    
+    .target {
+        width: 70%;
+        height: 70%;
+        background-color: $color-target;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px $color-letra;
+    }
+    
+    .name-premio {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        color: $color-letra;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    
+    .informacion{
+        margin-top:40px;
+        padding: 10px 20px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        li{
+            padding: 10px;
+        }
+    }
+
+
+}
